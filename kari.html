@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Főzés a világ körül</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            background: url("bg.gif") #ff028e center center no-repeat;
+            background-size: 50%;
+        }
+
+        .title-container {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: fantasy;
+            color: #fff900;
+            font-size: 35px;
+            text-shadow: 10px 4px 2px blue;
+        }
+
+        h1 {
+            max-width: 1000px;
+        }
+        h1 span {
+            display: block;
+        }
+
+        #globe {
+            display: inline-block;
+            width: 300px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        #root {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 500px;
+        }
+
+        button {
+            font-family: serif;
+            border: 3px solid blue;
+            background-color: transparent;
+            color: blue;
+            font-size: 30px;
+            padding: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 20px;
+            background-color: #fff900d1;
+        }
+
+        button:hover {
+            text-decoration: underline;
+        }
+        button.secondary {
+            
+        }
+        #winner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #winner p{
+            font-size: 25px;
+        }
+        #winner a{
+            color: black;
+            text-decoration: none;
+            font-size: 80px;
+            font-style: italic;
+            text-shadow: 0 0 5px blue, 0 0 15px white, 0 0 30px white;
+        }
+        #winner a:hover{
+            text-decoration: underline;
+        }
+
+        #winner img {
+            width: 350px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <img id="bg" src="./bg_web.gif"/> -->
+    <div class="title-container">
+        <h1>Főzés a világ körül</h1>
+        <img id="globe" src="./globe.gif" />
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+    <div id="root">
+    </div>
+</body>
+
+</html>
