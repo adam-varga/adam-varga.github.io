@@ -29,6 +29,7 @@
         h1 {
             max-width: 1000px;
         }
+
         h1 span {
             display: block;
         }
@@ -64,33 +65,58 @@
         button:hover {
             text-decoration: underline;
         }
-        button.secondary {
-            
-        }
+
+        button.secondary {}
+
         #winner {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
+
         }
-        #winner p{
+
+        #winner p {
             font-size: 25px;
         }
-        #winner a{
+
+        #winner a {
             color: black;
             text-decoration: none;
             font-size: 80px;
             font-style: italic;
             text-shadow: 0 0 5px blue, 0 0 15px white, 0 0 30px white;
         }
-        #winner a:hover{
+
+        #winner a:hover {
             text-decoration: underline;
         }
 
         #winner img {
             width: 350px;
             display: inline-block;
+        }
+
+        #winner.saved a {
+            font-size: 100px;
+        }
+
+        #winner.saved img {
+            width: 400px;
+        }
+
+        #saveButton {
+            z-index: 101;
+        }
+
+        #winner p.prev {
+            max-width: 600px;
+            text-align: center;
+            font-size: 18px;
+            color: yellow;
+            padding: 10px;
+            font-family: sans-serif;
+            text-shadow: 1px 1px 0px black;
         }
 
     </style>
@@ -104,9 +130,18 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <script>
         $(document).ready(function () {
+            // setTimeout(() => {
+            //     var scalar = 2;
+            //     var pineapple = confetti.shapeFromText({ text: '🍍', scalar });
 
+            //     confetti({
+            //         particleCount: 150,
+            //         spread: 60
+            //     });
+            // }, 1000);
         });
     </script>
     <div id="root">
